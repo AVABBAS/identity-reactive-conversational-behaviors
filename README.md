@@ -19,7 +19,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/status-in%20peer%20review-green" alt="Status: in peer review">
   <img src="https://img.shields.io/badge/journal-AI%20and%20Ethics-1d4266" alt="Journal: AI and Ethics">
-  <img src="https://img.shields.io/badge/preprint-Research%20Square-orange" alt="Preprint: Research Square">
+  <a href="https://www.researchsquare.com/article/rs-10369594"><img src="https://img.shields.io/badge/preprint-Research%20Square-orange" alt="Preprint: Research Square"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey" alt="License: CC BY 4.0"></a>
 </p>
 
