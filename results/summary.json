@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "title": "Machine Psychology Analysis - 10 Phenomena",
+    "citation": "Hamidavi, A. (2026). Ten Novel Phenomena in Machine Psychology.",
+    "pipeline_version": "1.0.0",
+    "generated_at": "2026-06-23T11:24:48.993579",
+    "total_responses": 135,
+    "total_features": 136
+  },
+  "key_metrics": {
+    "cultural_boxing_rate": 0.08148148148148149,
+    "linguistic_mirroring_rate": 0.1037037037037037,
+    "cme_rate": 0.05925925925925926,
+    "topic_avoidance_rate": 0.014814814814814815,
+    "pes_rate": 0.037037037037037035,
+    "dea_mean": 0.42962962962962964,
+    "empathy_mean": 0.007407407407407408,
+    "systemic_critique_rate": 0.06666666666666667
+  },
+  "model_comparison": {
+    "ChatGPT": {
+      "persona_label": "Global Empath",
+      "cb_rate": 0.1333333333333333,
+      "lm_rate": 0.0,
+      "ta_rate": 0.1111111111111111,
+      "cme_count": 0,
+      "pes_rate": 0.2222222222222222,
+      "avg_response_length": 200.0,
+      "empathy_score": 0.0222222222222222
+    },
+    "Gemini 3.1 Pro": {
+      "persona_label": "Corporate Consultant",
+      "cb_rate": 0.0888888888888888,
+      "lm_rate": 0.1777777777777777,
+      "ta_rate": 0.0,
+      "cme_count": 8,
+      "pes_rate": 0.0,
+      "avg_response_length": 200.0,
+      "empathy_score": 0.0
+    },
+    "Claude 4.6 Sonnet": {
+      "persona_label": "Pragmatic Consultant",
+      "cb_rate": 0.0222222222222222,
+      "lm_rate": 0.1333333333333333,
+      "ta_rate": 0.1111111111111111,
+      "cme_count": 0,
+      "pes_rate": 0.1111111111111111,
+      "avg_response_length": 200.0,
+      "empathy_score": 0.0
+    }
+  },
+  "statistical_highlights": {
+    "significant_anova_features": 13,
+    "significant_chi_features": 5,
+    "top_anova_features": [
+      "struct_word_count",
+      "struct_paragraph_count",
+      "auth_directives_count",
+      "auth_hedging_count",
+      "auth_professional_authority_count"
+    ],
+    "top_chi_features": [
+      "lm_present",
+      "cme_detected",
+      "lm_is_error",
+      "lm_is_accurate",
+      "emotion_opens_with_empathy"
+    ]
+  },
+  "phenomena_definitions": {
+    "CB": "Cultural Boxing - Model infers cultural background from name",
+    "DEA": "Default Empathetic Amplification - Higher empathy for non-white names",
+    "PES": "Proactive Empathetic Shield - Anticipatory stereotype protection",
+    "IES": "Inverted Empathy Spectrum - Empathy correlated with name markedness",
+    "LM": "Linguistic Mirroring - Spontaneous language switching",
+    "LSS": "Lexical Surface Sensitivity - Response shifts from wording changes",
+    "CLS": "Cultural Lexical Sensitivity - Register-dependent cultural triggers",
+    "UP": "Unmarkedness Paradox - Asymmetric cultural markedness",
+    "CME": "Cultural Misattribution Error - Incorrect cultural inference",
+    "TA": "Topic Avoidance - Systematic non-engagement with sensitive topics"
+  },
+  "data_files": {
+    "classified_responses": "data/classified_responses.csv",
+    "engineered_features": "data/engineered_features.csv",
+    "model_phenotypes": "data/model_phenotypes.csv",
+    "signature_comparison": "data/signature_comparison.csv",
+    "statistical_tests": "tables/statistical_tests.json",
+    "alignment_signatures": "models/alignment_signatures.json",
+    "phenotype_analysis": "models/phenotype_analysis.json",
+    "clustering_results": "models/clustering_results.json"
+  }
+}

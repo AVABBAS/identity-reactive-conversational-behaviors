@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Psychology Analysis - 10 Phenomena Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7fa; color: #2d3436; line-height: 1.7; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        
+        .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: white; padding: 50px 40px; border-radius: 16px; margin-bottom: 30px; text-align: center; }
+        .header h1 { font-size: 2.2em; margin-bottom: 10px; }
+        .header p { font-size: 1.1em; opacity: 0.85; }
+        .header .meta { margin-top: 20px; font-size: 0.9em; opacity: 0.7; }
+        
+        .card { background: white; border-radius: 12px; padding: 30px; margin-bottom: 25px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .card h2 { font-size: 1.5em; margin-bottom: 20px; color: #1a1a2e; border-bottom: 3px solid #4285F4; padding-bottom: 10px; display: inline-block; }
+        .card h3 { font-size: 1.2em; margin: 20px 0 12px; color: #333; }
+        
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th { background: #1a1a2e; color: white; padding: 12px; text-align: left; font-weight: 600; font-size: 0.9em; }
+        td { padding: 10px 12px; border-bottom: 1px solid #eee; font-size: 0.95em; }
+        tr:hover { background: #f8f9fa; }
+        
+        .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+        .metric-card { background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 10px; padding: 20px; text-align: center; border-left: 4px solid #4285F4; }
+        .metric-card .value { font-size: 2em; font-weight: bold; color: #1a1a2e; }
+        .metric-card .label { font-size: 0.85em; color: #666; margin-top: 5px; }
+        
+        /* استایل اصلی عکس‌ها */
+        .figure-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); 
+            gap: 25px; 
+            margin: 20px 0; 
+        }
+        
+        .figure-card { 
+            background: white; 
+            border-radius: 12px; 
+            overflow: hidden; 
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1); 
+            transition: all 0.3s ease;
+        }
+        
+        .figure-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
+        
+        .figure-card img { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+            min-height: 350px;
+            max-height: 650px;
+            object-fit: contain;
+            background: #fafafa;
+            padding: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .figure-card img:hover {
+            opacity: 0.9;
+        }
+        
+        .figure-caption { 
+            padding: 15px 20px; 
+            font-size: 1em; 
+            color: #555; 
+            background: #f8f9fa;
+            font-weight: 500;
+            border-top: 2px solid #e9ecef;
+            text-align: center;
+        }
+        
+        .finding-item { background: #f8f9fa; border-radius: 8px; padding: 15px 20px; margin: 10px 0; border-left: 4px solid #10A37F; }
+        .finding-item h4 { color: #1a1a2e; margin-bottom: 5px; }
+        .finding-item p { color: #555; font-size: 0.95em; }
+        
+        .footer { text-align: center; padding: 30px; color: #999; font-size: 0.9em; }
+        
+        .sankey-container { 
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef); 
+            padding: 50px 20px; 
+            text-align: center; 
+            border-radius: 8px; 
+            min-height: 350px; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+        }
+        
+        .sankey-container a { 
+            display: inline-block; 
+            background: #1a1a2e; 
+            color: white; 
+            padding: 15px 35px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: all 0.3s ease;
+            font-size: 1.1em;
+        }
+        
+        .sankey-container a:hover { 
+            background: #4285F4; 
+            transform: scale(1.05);
+        }
+        
+        .sankey-container .sankey-icon { 
+            font-size: 4em; 
+            margin-bottom: 15px; 
+        }
+        
+        .sankey-container p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.1em;
+        }
+        
+        /* مودال برای نمایش بزرگ عکس */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.92);
+            cursor: pointer;
+        }
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: #f1f1f1;
+            font-size: 45px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            z-index: 1001;
+        }
+        
+        .modal-close:hover {
+            color: #bbb;
+            transform: rotate(90deg);
+        }
+        
+        /* ریسپانسیو برای موبایل و تبلت */
+        @media screen and (max-width: 992px) {
+            .figure-grid { 
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+                gap: 20px;
+            }
+            
+            .figure-card img {
+                min-height: 280px;
+                max-height: 500px;
+                padding: 12px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header { 
+                padding: 25px 15px; 
+            }
+            
+            .header h1 { 
+                font-size: 1.4em; 
+            }
+            
+            .metric-grid { 
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 10px;
+            }
+            
+            .metric-card {
+                padding: 15px 10px;
+            }
+            
+            .metric-card .value {
+                font-size: 1.5em;
+            }
+            
+            .figure-grid { 
+                grid-template-columns: 1fr; 
+                gap: 20px;
+            }
+            
+            .figure-card img {
+                min-height: 250px;
+                max-height: 450px;
+                padding: 10px;
+            }
+            
+            .card {
+                padding: 20px 15px;
+            }
+            
+            .card h2 {
+                font-size: 1.2em;
+            }
+            
+            table {
+                font-size: 0.8em;
+            }
+            
+            th, td {
+                padding: 8px 6px;
+            }
+            
+            .modal-content {
+                max-width: 95%;
+                max-height: 85%;
+            }
+            
+            .modal-close {
+                top: 10px;
+                right: 20px;
+                font-size: 35px;
+            }
+            
+            .sankey-container {
+                min-height: 250px;
+                padding: 30px 15px;
+            }
+            
+            .sankey-container .sankey-icon {
+                font-size: 3em;
+            }
+            
+            .sankey-container a {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .figure-card img {
+                min-height: 200px;
+                max-height: 350px;
+                padding: 8px;
+            }
+            
+            .metric-grid { 
+                grid-template-columns: 1fr 1fr; 
+                gap: 8px;
+            }
+            
+            .metric-card .value {
+                font-size: 1.2em;
+            }
+            
+            .metric-card .label {
+                font-size: 0.7em;
+            }
+        }
+        
+        @media print {
+            body { background: white; }
+            .card { box-shadow: none; break-inside: avoid; }
+            .figure-card:hover { transform: none; }
+            .modal { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <h1>Machine Psychology Analysis</h1>
+            <p>Ten Novel Phenomena in LLM Identity-Reactive Behaviors</p>
+            <p style="font-style:italic;margin-top:8px;">Hamidavi (2026) - Automated Analysis Pipeline</p>
+            <div class="meta">
+                135 Responses | 
+                3 Models | 
+                136 Features
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Key Metrics</h2>
+            <div class="metric-grid">
+                <div class="metric-card" style="border-left-color:#10A37F;">
+                    <div class="value">8.1%</div>
+                    <div class="label">Cultural Boxing Rate</div>
+                </div>
+                <div class="metric-card" style="border-left-color:#D97706;">
+                    <div class="value">10.4%</div>
+                    <div class="label">Linguistic Mirroring</div>
+                </div>
+                <div class="metric-card" style="border-left-color:#BB8FCE;">
+                    <div class="value">8</div>
+                    <div class="label">CME Instances</div>
+                </div>
+                <div class="metric-card" style="border-left-color:#85C1E9;">
+                    <div class="value">1.5%</div>
+                    <div class="label">Topic Avoidance</div>
+                </div>
+                <div class="metric-card" style="border-left-color:#45B7D1;">
+                    <div class="value">3.7%</div>
+                    <div class="label">PES Rate</div>
+                </div>
+                <div class="metric-card" style="border-left-color:#FF6B6B;">
+                    <div class="value">13</div>
+                    <div class="label">Significant ANOVA Features</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Model Comparison</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Persona</th>
+                        <th>CB Rate</th>
+                        <th>LM Rate</th>
+                        <th>TA Rate</th>
+                        <th>CME Count</th>
+                        <th>PES Rate</th>
+                        <th>Avg Length</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td style="color:#10A37F;font-weight:bold;">ChatGPT</td>
+                <td style="font-style:italic;">Global Empath</td>
+                <td>13.3%</td>
+                <td>0.0%</td>
+                <td>11.1%</td>
+                <td>0</td>
+                <td>22.2%</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td style="color:#4285F4;font-weight:bold;">Gemini 3.1 Pro</td>
+                <td style="font-style:italic;">Corporate Consultant</td>
+                <td>8.9%</td>
+                <td>17.8%</td>
+                <td>0.0%</td>
+                <td>8</td>
+                <td>0.0%</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td style="color:#D97706;font-weight:bold;">Claude 4.6 Sonnet</td>
+                <td style="font-style:italic;">Pragmatic Consultant</td>
+                <td>2.2%</td>
+                <td>13.3%</td>
+                <td>11.1%</td>
+                <td>0</td>
+                <td>11.1%</td>
+                <td>200</td>
+            </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Key Findings</h2>
+            
+        <div class="finding-item">
+            <h4>Cultural Boxing (CB)</h4>
+            <p>All 3 models infer culture from names. Rate: 8.1%</p>
+        </div>
+        <div class="finding-item">
+            <h4>Linguistic Mirroring (LM)</h4>
+            <p>Claude: 6 accurate Persian responses for Reza. Gemini: 8 erroneous Persian responses for Tyrone (CME). ChatGPT: 0 LM.</p>
+        </div>
+        <div class="finding-item">
+            <h4>Cultural Misattribution Error (CME)</h4>
+            <p>Unique to Gemini. 8 instances -- all writing Persian to Tyrone Williams.</p>
+        </div>
+        <div class="finding-item">
+            <h4>Topic Avoidance (TA)</h4>
+            <p>Gemini systematically avoids profiling topic. Rate: 1.5%</p>
+        </div>
+        <div class="finding-item">
+            <h4>Proactive Empathetic Shield (PES)</h4>
+            <p>ChatGPT strongest at 22.2%. Gemini: 0% (replaced by TA).</p>
+        </div>
+        <div class="finding-item">
+            <h4>Inverted Empathy Spectrum (IES)</h4>
+            <p>Reza > Tyrone > Jake in empathy allocation. Confirmed for Claude and Gemini.</p>
+        </div>
+        <div class="finding-item">
+            <h4>Unmarkedness Paradox (UP)</h4>
+            <p>White and Black names treated as unmarked; Middle Eastern name strongly marked.</p>
+        </div>
+        <div class="finding-item">
+            <h4>Statistical Differentiation</h4>
+            <p>ANOVA: 13 features differentiate models. Chi-square: 5 categorical associations.</p>
+        </div>
+        </div>
+        
+        <div class="card">
+            <h2>Phenomenon Rates (Overall)</h2>
+            <table>
+                <thead>
+                    <tr><th>Phenomenon</th><th>Value</th></tr>
+                </thead>
+                <tbody>
+            <tr>
+                <td>Cultural Boxing Rate</td>
+                <td>0.081</td>
+            </tr>
+            <tr>
+                <td>Linguistic Mirroring Rate</td>
+                <td>0.104</td>
+            </tr>
+            <tr>
+                <td>Cme Rate</td>
+                <td>0.059</td>
+            </tr>
+            <tr>
+                <td>Topic Avoidance Rate</td>
+                <td>0.015</td>
+            </tr>
+            <tr>
+                <td>Pes Rate</td>
+                <td>0.037</td>
+            </tr>
+            <tr>
+                <td>Dea Mean</td>
+                <td>0.430</td>
+            </tr>
+            <tr>
+                <td>Empathy Mean</td>
+                <td>0.007</td>
+            </tr>
+            <tr>
+                <td>Systemic Critique Rate</td>
+                <td>0.067</td>
+            </tr></tbody>
+            </table>
+        </div>
+        
+        <div class="card">
+            <h2>Visualizations</h2>
+            <p style="color:#666;margin-bottom:15px;font-size:0.95em;">Click on any photo to view it larger. 💡</p>
+            <div class="figure-grid">
+                
+        <div class="figure-card">
+            <img src="figures/clustering_metrics.png" alt="Clustering Metrics" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Clustering Metrics</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/comparison_bar_charts.png" alt="Comparison Bar Charts" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Comparison Bar Charts</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/flow_register_phenomenon.png" alt="Flow Register Phenomenon" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Flow Register Phenomenon</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/heatmap_feature_profile.png" alt="Heatmap Feature Profile" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Heatmap Feature Profile</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/model_similarity_matrix.png" alt="Model Similarity Matrix" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Model Similarity Matrix</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/network_phenomenon_cooccurrence.png" alt="Network Phenomenon Cooccurrence" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Network Phenomenon Cooccurrence</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/phenomenon_correlation_matrix.png" alt="Phenomenon Correlation Matrix" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Phenomenon Correlation Matrix</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/phenomenon_distribution.png" alt="Phenomenon Distribution" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Phenomenon Distribution</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/phenomenon_heatmap_model.png" alt="Phenomenon Heatmap Model" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Phenomenon Heatmap Model</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/phenomenon_heatmap_persona.png" alt="Phenomenon Heatmap Persona" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Phenomenon Heatmap Persona</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/radar_chart_signatures.png" alt="Radar Chart Signatures" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Radar Chart Signatures</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/scatter_pca.png" alt="Scatter PCA" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Scatter PCA</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/scatter_tse.png" alt="Scatter TSE" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Scatter TSE</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/scatter_umap.png" alt="Scatter UMAP" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Scatter UMAP</div>
+        </div>
+        <div class="figure-card">
+            <img src="figures/summary_dashboard.png" alt="Summary Dashboard" loading="lazy" onclick="openModal(this.src)">
+            <div class="figure-caption">📊 Summary Dashboard</div>
+        </div>
+        <div class="figure-card">
+            <div class="sankey-container">
+                <div class="sankey-icon">🔗</div>
+                <p>Interactive Sankey Diagram</p>
+                <a href="figures/sankey_phenomenon_flow.html" target="_blank">Open Sankey Flow Diagram</a>
+                <p style="margin-top:15px;font-size:0.85em;color:#999;">Click to open interactive visualization</p>
+            </div>
+            <div class="figure-caption">📊 Sankey Phenomenon Flow (Interactive)</div>
+        </div>
+            </div>
+            <p style="color:#888;font-size:0.85em;margin-top:15px;text-align:center;">
+                📁 All figures available in <code>figures/</code> directory
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>Machine Psychology Analysis Pipeline v1.0 | Automated Behavioral Phenotyping</p>
+            <p>Article: Hamidavi, A. (2026). Ten Novel Phenomena in Machine Psychology</p>
+            
+        </div>
+        
+    </div>
+
+    <!-- مودال برای نمایش بزرگ عکس -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="modal-close" onclick="event.stopPropagation(); closeModal();">&times;</span>
+        <img class="modal-content" id="modalImage" onclick="event.stopPropagation();">
+    </div>
+
+    <script>
+        // باز کردن مودال با عکس بزرگ
+        function openModal(src) {
+            var modal = document.getElementById('imageModal');
+            var modalImg = document.getElementById('modalImage');
+            modal.style.display = "block";
+            modalImg.src = src;
+            document.body.style.overflow = "hidden"; // جلوگیری از اسکرول
+        }
+
+        // بستن مودال
+        function closeModal() {
+            document.getElementById('imageModal').style.display = "none";
+            document.body.style.overflow = "auto"; // برگشت اسکرول
+        }
+
+        // بستن با کلید ESC
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
+
+        // بستن با کلیک خارج از عکس
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>

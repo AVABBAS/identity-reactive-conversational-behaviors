@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these materials, please cite the article."
+title: "Identity-Reactive Conversational Behaviors in Large Language Models: Data and Materials"
+authors:
+  - family-names: Hamidavi
+    given-names: Abbas
+    orcid: "https://orcid.org/0009-0001-7342-7844"
+    affiliation: "Department of Computer Engineering, Mashhad Branch, Islamic Azad University, Mashhad, Iran"
+date-released: 2026-11-04
+license: CC-BY-4.0
+preferred-citation:
+  type: article
+  title: "Identity-Reactive Conversational Behaviors in Large Language Models"
+  authors:
+    - family-names: Hamidavi
+      given-names: Abbas
+      orcid: "https://orcid.org/0009-0001-7342-7844"
+  journal: "AI and Ethics"
+  year: 2026
+  notes: "Manuscript in peer review. Preprint (original version): Research Square rs-10369594."

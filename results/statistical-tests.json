@@ -1,0 +1,1258 @@
+{
+  "descriptive": {
+    "descriptive_stats": {
+      "struct_char_count": {
+        "count": 135.0,
+        "mean": 200.0,
+        "std": 0.0,
+        "min": 200.0,
+        "25%": 200.0,
+        "50%": 200.0,
+        "75%": 200.0,
+        "max": 200.0
+      },
+      "struct_word_count": {
+        "count": 135.0,
+        "mean": 33.385,
+        "std": 3.076,
+        "min": 27.0,
+        "25%": 31.0,
+        "50%": 33.0,
+        "75%": 35.0,
+        "max": 43.0
+      },
+      "struct_bold_count": {
+        "count": 135.0,
+        "mean": 0.37,
+        "std": 0.608,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 1.0,
+        "max": 2.0
+      },
+      "emotion_empathy_score": {
+        "count": 135.0,
+        "mean": 0.007,
+        "std": 0.086,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 1.0
+      },
+      "emotion_positive_emotion_count": {
+        "count": 135.0,
+        "mean": 0.237,
+        "std": 0.507,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 2.0
+      },
+      "auth_directives_count": {
+        "count": 135.0,
+        "mean": 0.422,
+        "std": 0.833,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 1.0,
+        "max": 3.0
+      },
+      "auth_systemic_critique_count": {
+        "count": 135.0,
+        "mean": 0.141,
+        "std": 0.671,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 5.0
+      },
+      "accept_validation_count": {
+        "count": 135.0,
+        "mean": 0.348,
+        "std": 0.551,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 1.0,
+        "max": 2.0
+      },
+      "resist_boundary_setting_count": {
+        "count": 135.0,
+        "mean": 0.304,
+        "std": 0.775,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 4.0
+      },
+      "resist_pushback_count": {
+        "count": 135.0,
+        "mean": 0.244,
+        "std": 0.539,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 3.0
+      },
+      "cb_score": {
+        "count": 135.0,
+        "mean": 0.081,
+        "std": 0.275,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 1.0
+      },
+      "dea_combined_score": {
+        "count": 135.0,
+        "mean": 0.43,
+        "std": 0.697,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 1.0,
+        "max": 3.0
+      },
+      "pes_present": {
+        "count": 135.0,
+        "mean": 0.037,
+        "std": 0.19,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 1.0
+      },
+      "lm_present": {
+        "count": 135.0,
+        "mean": 0.104,
+        "std": 0.306,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 1.0
+      },
+      "ta_present": {
+        "count": 135.0,
+        "mean": 0.015,
+        "std": 0.121,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 1.0
+      },
+      "cme_detected": {
+        "count": 135.0,
+        "mean": 0.059,
+        "std": 0.237,
+        "min": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "max": 1.0
+      }
+    }
+  },
+  "anova_tests": {
+    "anova_results": [
+      {
+        "feature": "struct_char_count",
+        "f_statistic": NaN,
+        "p_value": NaN,
+        "eta_squared": 0.0,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "struct_word_count",
+        "f_statistic": 3.406760293412952,
+        "p_value": 0.03608965331600267,
+        "eta_squared": 0.04908398373603805,
+        "significant": true,
+        "stars": "*"
+      },
+      {
+        "feature": "struct_paragraph_count",
+        "f_statistic": 20.815553339980053,
+        "p_value": 1.3882326659606616e-08,
+        "eta_squared": 0.23976755937342087,
+        "significant": true,
+        "stars": "***"
+      },
+      {
+        "feature": "emotion_empathy_score",
+        "f_statistic": 1.0,
+        "p_value": 0.37064894432348666,
+        "eta_squared": 0.014925373134328363,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "emotion_positive_emotion_count",
+        "f_statistic": 1.0682414698162723,
+        "p_value": 0.3465637011892087,
+        "eta_squared": 0.015927679724494187,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "emotion_negative_emotion_count",
+        "f_statistic": 1.0082256169212693,
+        "p_value": 0.3676579505594663,
+        "eta_squared": 0.01504629629629629,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "emotion_empathy_markers_count",
+        "f_statistic": 1.0,
+        "p_value": 0.37064894432348666,
+        "eta_squared": 0.014925373134328363,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "auth_directives_count",
+        "f_statistic": 5.320930232558139,
+        "p_value": 0.005992082876486154,
+        "eta_squared": 0.07460545193687229,
+        "significant": true,
+        "stars": "**"
+      },
+      {
+        "feature": "auth_hedging_count",
+        "f_statistic": 4.292682926829269,
+        "p_value": 0.015625425109895657,
+        "eta_squared": 0.06106870229007635,
+        "significant": true,
+        "stars": "*"
+      },
+      {
+        "feature": "auth_systemic_critique_count",
+        "f_statistic": 2.2284843869002278,
+        "p_value": 0.11172798276646699,
+        "eta_squared": 0.03266208251473478,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "auth_professional_authority_count",
+        "f_statistic": 11.31950207468879,
+        "p_value": 2.9028362619787574e-05,
+        "eta_squared": 0.14639905548996462,
+        "significant": true,
+        "stars": "***"
+      },
+      {
+        "feature": "auth_personal_authority_count",
+        "f_statistic": 3.230158730158731,
+        "p_value": 0.042698059700437,
+        "eta_squared": 0.046658259773013876,
+        "significant": true,
+        "stars": "*"
+      },
+      {
+        "feature": "accept_validation_count",
+        "f_statistic": 1.2753623188405794,
+        "p_value": 0.2827487870276885,
+        "eta_squared": 0.01895734597156398,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "accept_affirmation_count",
+        "f_statistic": 0.8321513002364065,
+        "p_value": 0.4373817241275484,
+        "eta_squared": 0.01245136186770428,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "accept_emotional_support_count",
+        "f_statistic": 2.971677559912853,
+        "p_value": 0.05465471791322574,
+        "eta_squared": 0.04308547602501736,
+        "significant": false,
+        "stars": "."
+      },
+      {
+        "feature": "accept_practical_support_count",
+        "f_statistic": 2.2392857142857134,
+        "p_value": 0.11056675821661446,
+        "eta_squared": 0.032815198618307416,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "resist_boundary_setting_count",
+        "f_statistic": 3.061200923787529,
+        "p_value": 0.05017038345215834,
+        "eta_squared": 0.04432591502666912,
+        "significant": false,
+        "stars": "."
+      },
+      {
+        "feature": "resist_pushback_count",
+        "f_statistic": 4.165048543689318,
+        "p_value": 0.017616716478871412,
+        "eta_squared": 0.0593607305936073,
+        "significant": true,
+        "stars": "*"
+      },
+      {
+        "feature": "resist_deflection_count",
+        "f_statistic": 0.9221556886227544,
+        "p_value": 0.40020719896391,
+        "eta_squared": 0.013779527559055118,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "reason_logical_structures_count",
+        "f_statistic": 1.4302949061662185,
+        "p_value": 0.24292144028203977,
+        "eta_squared": 0.02121145856111962,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "reason_moral_reasoning_count",
+        "f_statistic": 0.7108843537414965,
+        "p_value": 0.493080335657508,
+        "eta_squared": 0.010656197420078518,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "reason_practical_reasoning_count",
+        "f_statistic": 5.2408376963350785,
+        "p_value": 0.006453340612870516,
+        "eta_squared": 0.07356507679870654,
+        "significant": true,
+        "stars": "**"
+      },
+      {
+        "feature": "reason_evidence_citation_count",
+        "f_statistic": 4.847457627118643,
+        "p_value": 0.009300320540287014,
+        "eta_squared": 0.06842105263157895,
+        "significant": true,
+        "stars": "**"
+      },
+      {
+        "feature": "reason_cost_benefit_count",
+        "f_statistic": -2.70833898429455e-32,
+        "p_value": NaN,
+        "eta_squared": 0.0,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "reason_options_count",
+        "f_statistic": NaN,
+        "p_value": NaN,
+        "eta_squared": 0.0,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "cb_score",
+        "f_statistic": 1.891402714932126,
+        "p_value": 0.15492594268003282,
+        "eta_squared": 0.027859237536656884,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "dea_combined_score",
+        "f_statistic": 3.032857142857145,
+        "p_value": 0.05154822918657149,
+        "eta_squared": 0.0439335306168905,
+        "significant": false,
+        "stars": "."
+      },
+      {
+        "feature": "pes_present",
+        "f_statistic": 0.20370370370370358,
+        "p_value": 0.815959961942346,
+        "eta_squared": 0.003076923076923077,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "lm_present",
+        "f_statistic": 4.316981132075469,
+        "p_value": 0.01527303719811104,
+        "eta_squared": 0.06139315230224322,
+        "significant": true,
+        "stars": "*"
+      },
+      {
+        "feature": "cme_detected",
+        "f_statistic": 9.513513513513514,
+        "p_value": 0.00013812459474727088,
+        "eta_squared": 0.12598425196850396,
+        "significant": true,
+        "stars": "***"
+      },
+      {
+        "feature": "ta_present",
+        "f_statistic": 0.5000000000000001,
+        "p_value": 0.6076747007028388,
+        "eta_squared": 0.007518796992481206,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "social_cultural_identity_count",
+        "f_statistic": 1.745422842197036,
+        "p_value": 0.17857576908858622,
+        "eta_squared": 0.025764439411098527,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "social_power_roles_count",
+        "f_statistic": 4.346774193548389,
+        "p_value": 0.014851946737131328,
+        "eta_squared": 0.06179066834804541,
+        "significant": true,
+        "stars": "*"
+      },
+      {
+        "feature": "dark_minimization_count",
+        "f_statistic": 1.7339901477832516,
+        "p_value": 0.18057605840661517,
+        "eta_squared": 0.0256,
+        "significant": false,
+        "stars": ""
+      },
+      {
+        "feature": "dark_deflection_tactics_count",
+        "f_statistic": 3.142857142857143,
+        "p_value": 0.04640625457761191,
+        "eta_squared": 0.045454545454545456,
+        "significant": true,
+        "stars": "*"
+      }
+    ],
+    "pairwise_ttests": [
+      {
+        "feature": "struct_word_count",
+        "model1": "ChatGPT",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": 2.399490306864787,
+        "p_value": 0.018527128588820354,
+        "cohens_d": 0.5058569728792723,
+        "d_magnitude": "medium",
+        "significant": true
+      },
+      {
+        "feature": "struct_word_count",
+        "model1": "Gemini 3.1 Pro",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": 2.048434329324962,
+        "p_value": 0.04349703057734305,
+        "cohens_d": 0.43184787452975487,
+        "d_magnitude": "small",
+        "significant": true
+      },
+      {
+        "feature": "struct_paragraph_count",
+        "model1": "ChatGPT",
+        "model2": "Gemini 3.1 Pro",
+        "t_statistic": 4.112869761421896,
+        "p_value": 8.7643631674735e-05,
+        "cohens_d": 0.8670690777151008,
+        "d_magnitude": "large",
+        "significant": true
+      },
+      {
+        "feature": "struct_paragraph_count",
+        "model1": "ChatGPT",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": -2.011461411882975,
+        "p_value": 0.04733629511611091,
+        "cohens_d": -0.4240532991392186,
+        "d_magnitude": "small",
+        "significant": true
+      },
+      {
+        "feature": "struct_paragraph_count",
+        "model1": "Gemini 3.1 Pro",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": -7.09745248492027,
+        "p_value": 3.095200033032636e-10,
+        "cohens_d": -1.4962743624779944,
+        "d_magnitude": "large",
+        "significant": true
+      },
+      {
+        "feature": "auth_directives_count",
+        "model1": "ChatGPT",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": -2.0050697166253144,
+        "p_value": 0.048028582983907164,
+        "cohens_d": -0.4227058114642917,
+        "d_magnitude": "small",
+        "significant": true
+      },
+      {
+        "feature": "auth_directives_count",
+        "model1": "Gemini 3.1 Pro",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": -2.9211869733608853,
+        "p_value": 0.004429578862373771,
+        "cohens_d": -0.6158402871356007,
+        "d_magnitude": "medium",
+        "significant": true
+      },
+      {
+        "feature": "auth_hedging_count",
+        "model1": "ChatGPT",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": -2.0718790811312493,
+        "p_value": 0.04120371771437863,
+        "cohens_d": -0.4367904621887693,
+        "d_magnitude": "small",
+        "significant": true
+      },
+      {
+        "feature": "auth_hedging_count",
+        "model1": "Gemini 3.1 Pro",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": -2.0718790811312493,
+        "p_value": 0.04120371771437863,
+        "cohens_d": -0.4367904621887693,
+        "d_magnitude": "small",
+        "significant": true
+      },
+      {
+        "feature": "auth_professional_authority_count",
+        "model1": "ChatGPT",
+        "model2": "Gemini 3.1 Pro",
+        "t_statistic": -3.999999999999999,
+        "p_value": 0.00013160682184494178,
+        "cohens_d": -0.8432740427115677,
+        "d_magnitude": "large",
+        "significant": true
+      },
+      {
+        "feature": "auth_professional_authority_count",
+        "model1": "Gemini 3.1 Pro",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": 3.021362392265149,
+        "p_value": 0.003294500406566787,
+        "cohens_d": 0.6369591197555318,
+        "d_magnitude": "medium",
+        "significant": true
+      },
+      {
+        "feature": "auth_personal_authority_count",
+        "model1": "ChatGPT",
+        "model2": "Gemini 3.1 Pro",
+        "t_statistic": 2.518169269645755,
+        "p_value": 0.013605432609684522,
+        "cohens_d": 0.530876695061553,
+        "d_magnitude": "medium",
+        "significant": true
+      },
+      {
+        "feature": "resist_pushback_count",
+        "model1": "ChatGPT",
+        "model2": "Gemini 3.1 Pro",
+        "t_statistic": 2.638565010845042,
+        "p_value": 0.009845587075612136,
+        "cohens_d": 0.5562583459131478,
+        "d_magnitude": "medium",
+        "significant": true
+      },
+      {
+        "feature": "resist_pushback_count",
+        "model1": "Gemini 3.1 Pro",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": -2.7480290660418527,
+        "p_value": 0.007272917300175137,
+        "cohens_d": -0.5793353950025016,
+        "d_magnitude": "medium",
+        "significant": true
+      },
+      {
+        "feature": "reason_practical_reasoning_count",
+        "model1": "Gemini 3.1 Pro",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": -3.478505426185216,
+        "p_value": 0.0007861069700867448,
+        "cohens_d": -0.7333333333333335,
+        "d_magnitude": "medium",
+        "significant": true
+      },
+      {
+        "feature": "reason_evidence_citation_count",
+        "model1": "ChatGPT",
+        "model2": "Gemini 3.1 Pro",
+        "t_statistic": -2.700988113184649,
+        "p_value": 0.008292300753661615,
+        "cohens_d": -0.5694182913802776,
+        "d_magnitude": "medium",
+        "significant": true
+      },
+      {
+        "feature": "lm_present",
+        "model1": "ChatGPT",
+        "model2": "Gemini 3.1 Pro",
+        "t_statistic": -3.0843984038242387,
+        "p_value": 0.0027252911744458817,
+        "cohens_d": -0.6502482778314933,
+        "d_magnitude": "medium",
+        "significant": true
+      },
+      {
+        "feature": "lm_present",
+        "model1": "ChatGPT",
+        "model2": "Claude 4.6 Sonnet",
+        "t_statistic": -2.601774542351963,
+        "p_value": 0.010880186798833175,
+        "cohens_d": -0.5485022341382948,
+        "d_magnitude": "medium",
+        "significant": true
+      }
+    ],
+    "significant_anova": [
+      "struct_word_count",
+      "struct_paragraph_count",
+      "auth_directives_count",
+      "auth_hedging_count",
+      "auth_professional_authority_count",
+      "auth_personal_authority_count",
+      "resist_pushback_count",
+      "reason_practical_reasoning_count",
+      "reason_evidence_citation_count",
+      "lm_present",
+      "cme_detected",
+      "social_power_roles_count",
+      "dark_deflection_tactics_count"
+    ],
+    "significant_pairwise": []
+  },
+  "chi_square": {
+    "chi_square_results": [
+      {
+        "feature": "cb_score",
+        "chi2": 3.760997067448681,
+        "p_value": 0.15251405340207036,
+        "dof": 2,
+        "cramers_v": 0.16691086704183433,
+        "significant": false
+      },
+      {
+        "feature": "pes_present",
+        "chi2": 0.4153846153846154,
+        "p_value": 0.8124569850210029,
+        "dof": 2,
+        "cramers_v": 0.05547001962252291,
+        "significant": false
+      },
+      {
+        "feature": "lm_present",
+        "chi2": 8.288075560802834,
+        "p_value": 0.01585868815270912,
+        "dof": 2,
+        "cramers_v": 0.24777641595245342,
+        "significant": true
+      },
+      {
+        "feature": "cme_detected",
+        "chi2": 17.007874015748033,
+        "p_value": 0.00020266888725538438,
+        "dof": 2,
+        "cramers_v": 0.35494260376644554,
+        "significant": true
+      },
+      {
+        "feature": "ta_present",
+        "chi2": 1.0150375939849625,
+        "p_value": 0.6019873802141393,
+        "dof": 2,
+        "cramers_v": 0.086710996952412,
+        "significant": false
+      },
+      {
+        "feature": "lm_is_error",
+        "chi2": 17.007874015748033,
+        "p_value": 0.00020266888725538438,
+        "dof": 2,
+        "cramers_v": 0.35494260376644554,
+        "significant": true
+      },
+      {
+        "feature": "lm_is_accurate",
+        "chi2": 12.558139534883722,
+        "p_value": 0.001875144103258315,
+        "dof": 2,
+        "cramers_v": 0.30499714066520933,
+        "significant": true
+      },
+      {
+        "feature": "dea_systemic_acknowledgment",
+        "chi2": 4.06015037593985,
+        "p_value": 0.1313256466685046,
+        "dof": 2,
+        "cramers_v": 0.173421993904824,
+        "significant": false
+      },
+      {
+        "feature": "auth_systemic_critique_present",
+        "chi2": 0.7142857142857142,
+        "p_value": 0.6996725373751304,
+        "dof": 2,
+        "cramers_v": 0.07273929674533079,
+        "significant": false
+      },
+      {
+        "feature": "emotion_opens_with_empathy",
+        "chi2": 6.675341574495771,
+        "p_value": 0.03551959413695599,
+        "dof": 2,
+        "cramers_v": 0.22236675701618397,
+        "significant": true
+      }
+    ],
+    "significant_chi": [
+      "lm_present",
+      "cme_detected",
+      "lm_is_error",
+      "lm_is_accurate",
+      "emotion_opens_with_empathy"
+    ]
+  },
+  "name_effect": {
+    "by_model": {
+      "ChatGPT (GPT-5.4)": {
+        "emotion_empathy_score": {
+          "h_statistic": 1.9999999999998876,
+          "p_value": 0.367879441171463,
+          "significant": false
+        },
+        "emotion_positive_emotion_count": {
+          "h_statistic": 0.4486083425618086,
+          "p_value": 0.7990720426337343,
+          "significant": false
+        },
+        "accept_validation_count": {
+          "h_statistic": 0.02857142857143473,
+          "p_value": 0.9858158423524016,
+          "significant": false
+        },
+        "accept_emotional_support_count": {
+          "h_statistic": 0.14666666666666567,
+          "p_value": 0.929291014721204,
+          "significant": false
+        },
+        "resist_boundary_setting_count": {
+          "h_statistic": 0.02662128946872344,
+          "p_value": 0.9867775501533242,
+          "significant": false
+        },
+        "auth_systemic_critique_count": {
+          "h_statistic": 2.0952380952381278,
+          "p_value": 0.3507719269028056,
+          "significant": false
+        },
+        "dea_combined_score": {
+          "h_statistic": 0.4066666666666739,
+          "p_value": 0.816006194022218,
+          "significant": false
+        },
+        "pes_present": {
+          "h_statistic": 4.093023255813942,
+          "p_value": 0.1291847630152298,
+          "significant": false
+        },
+        "cb_score": {
+          "h_statistic": 1.128205128205146,
+          "p_value": 0.5688704425005178,
+          "significant": false
+        }
+      },
+      "Gemini 3.1 Pro": {
+        "emotion_empathy_score": {
+          "h_statistic": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "emotion_positive_emotion_count": {
+          "h_statistic": 1.0770370370370774,
+          "p_value": 0.5836122229384122,
+          "significant": false
+        },
+        "accept_validation_count": {
+          "h_statistic": 4.4705882352941195,
+          "p_value": 0.10696066620686179,
+          "significant": false
+        },
+        "accept_emotional_support_count": {
+          "h_statistic": 8.46821705426357,
+          "p_value": 0.014492724311123466,
+          "significant": true
+        },
+        "resist_boundary_setting_count": {
+          "h_statistic": 0.18947368421056712,
+          "p_value": 0.909612274625923,
+          "significant": false
+        },
+        "auth_systemic_critique_count": {
+          "h_statistic": 1.0232558139534298,
+          "p_value": 0.5995188231194413,
+          "significant": false
+        },
+        "dea_combined_score": {
+          "h_statistic": 0.23529411764704544,
+          "p_value": 0.8890097654027816,
+          "significant": false
+        },
+        "pes_present": {
+          "h_statistic": 1.0232558139534298,
+          "p_value": 0.5995188231194413,
+          "significant": false
+        },
+        "cb_score": {
+          "h_statistic": 0.5365853658536279,
+          "p_value": 0.7646839384138127,
+          "significant": false
+        }
+      },
+      "Claude 4.6 Sonnet": {
+        "emotion_empathy_score": {
+          "h_statistic": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "emotion_positive_emotion_count": {
+          "h_statistic": 0.35927648578817617,
+          "p_value": 0.8355724310073539,
+          "significant": false
+        },
+        "accept_validation_count": {
+          "h_statistic": 1.1887429643527068,
+          "p_value": 0.5519093417373255,
+          "significant": false
+        },
+        "accept_emotional_support_count": {
+          "h_statistic": 1.0770370370370774,
+          "p_value": 0.5836122229384122,
+          "significant": false
+        },
+        "resist_boundary_setting_count": {
+          "h_statistic": 0.5291830198041756,
+          "p_value": 0.767519410027785,
+          "significant": false
+        },
+        "auth_systemic_critique_count": {
+          "h_statistic": 0.43536090835365426,
+          "p_value": 0.8043824376515613,
+          "significant": false
+        },
+        "dea_combined_score": {
+          "h_statistic": 0.48070060207992293,
+          "p_value": 0.7863523527669984,
+          "significant": false
+        },
+        "pes_present": {
+          "h_statistic": 1.9999999999998876,
+          "p_value": 0.367879441171463,
+          "significant": false
+        },
+        "cb_score": {
+          "h_statistic": 1.9999999999998876,
+          "p_value": 0.367879441171463,
+          "significant": false
+        }
+      }
+    },
+    "overall": {
+      "emotion_empathy_score": {
+        "h_statistic": 1.9999999999981781,
+        "p_value": 0.3678794411717774,
+        "significant": false
+      },
+      "emotion_positive_emotion_count": {
+        "h_statistic": 1.124097409564383,
+        "p_value": 0.5700400230267287,
+        "significant": false
+      },
+      "accept_validation_count": {
+        "h_statistic": 1.6663713006570353,
+        "p_value": 0.43466239601598367,
+        "significant": false
+      },
+      "accept_emotional_support_count": {
+        "h_statistic": 1.384348564105797,
+        "p_value": 0.5004866859631584,
+        "significant": false
+      },
+      "resist_boundary_setting_count": {
+        "h_statistic": 0.16507028848211266,
+        "p_value": 0.9207790772063137,
+        "significant": false
+      },
+      "auth_systemic_critique_count": {
+        "h_statistic": 2.0160009047922105,
+        "p_value": 0.36494798135341106,
+        "significant": false
+      },
+      "dea_combined_score": {
+        "h_statistic": 0.034841550512446855,
+        "p_value": 0.9827300891205845,
+        "significant": false
+      },
+      "pes_present": {
+        "h_statistic": 1.6492307692303325,
+        "p_value": 0.43840357680321074,
+        "significant": false
+      },
+      "cb_score": {
+        "h_statistic": 1.3753665689147174,
+        "p_value": 0.5027394252033726,
+        "significant": false
+      }
+    }
+  },
+  "regression": {
+    "cb_score": {
+      "cv_f1_mean": 0.8953513365123142,
+      "cv_f1_std": 0.013964497630057532,
+      "top_predictors": [
+        {
+          "feature": "social_cultural_identity_count",
+          "coefficient": 0.8462766944554326
+        },
+        {
+          "feature": "resist_boundary_setting_count",
+          "coefficient": -0.7503549411230007
+        },
+        {
+          "feature": "auth_directives_count",
+          "coefficient": -0.48953161172185833
+        },
+        {
+          "feature": "accept_validation_count",
+          "coefficient": -0.48773207712026106
+        },
+        {
+          "feature": "struct_bold_count",
+          "coefficient": -0.47003549364560765
+        }
+      ]
+    },
+    "pes_present": {
+      "cv_f1_mean": 0.9467459125291247,
+      "cv_f1_std": 0.014368743090878546,
+      "top_predictors": [
+        {
+          "feature": "social_cultural_identity_count",
+          "coefficient": 1.0911378020200921
+        },
+        {
+          "feature": "auth_directives_count",
+          "coefficient": 0.8230013618738068
+        },
+        {
+          "feature": "reason_practical_reasoning_count",
+          "coefficient": -0.7759784876749942
+        },
+        {
+          "feature": "resist_pushback_count",
+          "coefficient": -0.7660240189260872
+        },
+        {
+          "feature": "resist_boundary_setting_count",
+          "coefficient": -0.7657439821152205
+        }
+      ]
+    },
+    "lm_present": {
+      "cv_f1_mean": 0.8473121548360947,
+      "cv_f1_std": 0.015147426006266024,
+      "top_predictors": [
+        {
+          "feature": "accept_validation_count",
+          "coefficient": -1.1245962923834323
+        },
+        {
+          "feature": "social_cultural_identity_count",
+          "coefficient": -1.053979275661453
+        },
+        {
+          "feature": "auth_directives_count",
+          "coefficient": -1.0339095924469035
+        },
+        {
+          "feature": "reason_moral_reasoning_count",
+          "coefficient": -0.9071537818075193
+        },
+        {
+          "feature": "resist_pushback_count",
+          "coefficient": -0.8191595969098329
+        }
+      ]
+    },
+    "cme_detected": {
+      "cv_f1_mean": 0.9120457448043654,
+      "cv_f1_std": 0.01540972284090496,
+      "top_predictors": [
+        {
+          "feature": "accept_validation_count",
+          "coefficient": -0.9030004052154382
+        },
+        {
+          "feature": "auth_directives_count",
+          "coefficient": -0.8272183842581203
+        },
+        {
+          "feature": "social_cultural_identity_count",
+          "coefficient": -0.8242683341480523
+        },
+        {
+          "feature": "struct_bold_count",
+          "coefficient": -0.7525814846663866
+        },
+        {
+          "feature": "reason_moral_reasoning_count",
+          "coefficient": -0.714003784774403
+        }
+      ]
+    },
+    "ta_present": {
+      "cv_f1_mean": 0.9741156887224304,
+      "cv_f1_std": 0.018869019568978032,
+      "top_predictors": [
+        {
+          "feature": "accept_validation_count",
+          "coefficient": 1.1188945310833187
+        },
+        {
+          "feature": "social_cultural_identity_count",
+          "coefficient": -0.38693533965562044
+        },
+        {
+          "feature": "reason_moral_reasoning_count",
+          "coefficient": -0.3826488645297489
+        },
+        {
+          "feature": "auth_directives_count",
+          "coefficient": -0.3418832772001059
+        },
+        {
+          "feature": "dark_minimization_count",
+          "coefficient": -0.2848640240024906
+        }
+      ]
+    }
+  },
+  "correlations": {
+    "strong_correlations": [
+      {
+        "feature1": "emotion_positive_emotion_count",
+        "feature2": "accept_affirmation_count",
+        "correlation": 0.5570889823798199,
+        "direction": "positive",
+        "magnitude": "moderate"
+      },
+      {
+        "feature1": "emotion_negative_emotion_count",
+        "feature2": "accept_emotional_support_count",
+        "correlation": 0.6046661885848997,
+        "direction": "positive",
+        "magnitude": "moderate"
+      },
+      {
+        "feature1": "auth_directives_count",
+        "feature2": "resist_boundary_setting_count",
+        "correlation": 0.585867266800119,
+        "direction": "positive",
+        "magnitude": "moderate"
+      },
+      {
+        "feature1": "accept_validation_count",
+        "feature2": "dea_combined_score",
+        "correlation": 0.560163029305797,
+        "direction": "positive",
+        "magnitude": "moderate"
+      },
+      {
+        "feature1": "accept_affirmation_count",
+        "feature2": "cb_score",
+        "correlation": 0.6756422175793001,
+        "direction": "positive",
+        "magnitude": "moderate"
+      },
+      {
+        "feature1": "accept_affirmation_count",
+        "feature2": "social_cultural_identity_count",
+        "correlation": 0.41776119363849357,
+        "direction": "positive",
+        "magnitude": "moderate"
+      },
+      {
+        "feature1": "resist_boundary_setting_count",
+        "feature2": "resist_deflection_count",
+        "correlation": 0.46993686056652434,
+        "direction": "positive",
+        "magnitude": "moderate"
+      },
+      {
+        "feature1": "cb_score",
+        "feature2": "social_cultural_identity_count",
+        "correlation": 0.4023739977435244,
+        "direction": "positive",
+        "magnitude": "moderate"
+      },
+      {
+        "feature1": "lm_present",
+        "feature2": "cme_detected",
+        "correlation": 0.7378563179960916,
+        "direction": "positive",
+        "magnitude": "strong"
+      }
+    ],
+    "correlation_matrix_shape": "(25, 25)"
+  },
+  "effect_sizes": {
+    "model_effects": [
+      {
+        "feature": "dea_combined_score",
+        "comparison": "ChatGPT vs Gemini 3.1 Pro",
+        "cohens_d": 0.6181863538679632,
+        "magnitude": "medium"
+      }
+    ],
+    "name_effects": []
+  },
+  "bootstrapping": {
+    "ChatGPT": {
+      "cb_rate": {
+        "observed": 0.13333333333333333,
+        "ci_lower": 0.044444444444444446,
+        "ci_upper": 0.24444444444444444,
+        "ci_width": 0.19999999999999998
+      },
+      "pes_rate": {
+        "observed": 0.044444444444444446,
+        "ci_lower": 0.0,
+        "ci_upper": 0.1111111111111111,
+        "ci_width": 0.1111111111111111
+      },
+      "lm_rate": {
+        "observed": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "ci_width": 0.0
+      },
+      "cme_rate": {
+        "observed": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "ci_width": 0.0
+      },
+      "ta_rate": {
+        "observed": 0.022222222222222223,
+        "ci_lower": 0.0,
+        "ci_upper": 0.06666666666666667,
+        "ci_width": 0.06666666666666667
+      },
+      "mean_empathy": {
+        "observed": 0.022222222222222223,
+        "ci_lower": 0.0,
+        "ci_upper": 0.06666666666666667,
+        "ci_width": 0.06666666666666667
+      }
+    },
+    "Gemini 3.1 Pro": {
+      "cb_rate": {
+        "observed": 0.08888888888888889,
+        "ci_lower": 0.022222222222222223,
+        "ci_upper": 0.17777777777777778,
+        "ci_width": 0.15555555555555556
+      },
+      "pes_rate": {
+        "observed": 0.044444444444444446,
+        "ci_lower": 0.0,
+        "ci_upper": 0.1111111111111111,
+        "ci_width": 0.1111111111111111
+      },
+      "lm_rate": {
+        "observed": 0.17777777777777778,
+        "ci_lower": 0.06666666666666667,
+        "ci_upper": 0.28888888888888886,
+        "ci_width": 0.2222222222222222
+      },
+      "cme_rate": {
+        "observed": 0.17777777777777778,
+        "ci_lower": 0.06666666666666667,
+        "ci_upper": 0.3111111111111111,
+        "ci_width": 0.24444444444444446
+      },
+      "ta_rate": {
+        "observed": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "ci_width": 0.0
+      },
+      "mean_empathy": {
+        "observed": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "ci_width": 0.0
+      }
+    },
+    "Claude 4.6 Sonnet": {
+      "cb_rate": {
+        "observed": 0.022222222222222223,
+        "ci_lower": 0.0,
+        "ci_upper": 0.06666666666666667,
+        "ci_width": 0.06666666666666667
+      },
+      "pes_rate": {
+        "observed": 0.022222222222222223,
+        "ci_lower": 0.0,
+        "ci_upper": 0.06666666666666667,
+        "ci_width": 0.06666666666666667
+      },
+      "lm_rate": {
+        "observed": 0.13333333333333333,
+        "ci_lower": 0.044444444444444446,
+        "ci_upper": 0.24444444444444444,
+        "ci_width": 0.19999999999999998
+      },
+      "cme_rate": {
+        "observed": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "ci_width": 0.0
+      },
+      "ta_rate": {
+        "observed": 0.022222222222222223,
+        "ci_lower": 0.0,
+        "ci_upper": 0.06666666666666667,
+        "ci_width": 0.06666666666666667
+      },
+      "mean_empathy": {
+        "observed": 0.0,
+        "ci_lower": 0.0,
+        "ci_upper": 0.0,
+        "ci_width": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "enhanced_dictionaries": {
+    "resistance_strategies": [
+      "boundary_setting",
+      "pushback",
+      "deflection",
+      "normalization",
+      "minimization",
+      "proceduralization",
+      "systemic_acknowledgment"
+    ],
+    "acceptance_types": [
+      "emotional_validation",
+      "practical_support",
+      "empowerment",
+      "cultural_affirmation",
+      "contextual_normalization",
+      "explicit_agreement"
+    ]
+  },
+  "acceptance_resistance_patterns": {
+    "ar_by_model": [
+      {
+        "model": "ChatGPT (GPT-5.4)",
+        "mean_accept": 1.4,
+        "mean_resist": 0.53,
+        "ar_ratio": 1.06,
+        "mean_validation": 0.42,
+        "mean_boundary": 0.18,
+        "mean_pushback": 0.29
+      },
+      {
+        "model": "Claude 4.6 Sonnet",
+        "mean_accept": 0.82,
+        "mean_resist": 1.0,
+        "ar_ratio": 0.59,
+        "mean_validation": 0.38,
+        "mean_boundary": 0.53,
+        "mean_pushback": 0.38
+      },
+      {
+        "model": "Gemini 3.1 Pro",
+        "mean_accept": 0.84,
+        "mean_resist": 0.29,
+        "ar_ratio": 0.74,
+        "mean_validation": 0.24,
+        "mean_boundary": 0.2,
+        "mean_pushback": 0.07
+      }
+    ],
+    "ar_by_name": [
+      {
+        "user_name": "Jake Thompson",
+        "mean_accept": 1.29,
+        "mean_resist": 0.73,
+        "ar_ratio": 1.0
+      },
+      {
+        "user_name": "Reza Moradi",
+        "mean_accept": 0.91,
+        "mean_resist": 0.47,
+        "ar_ratio": 0.72
+      },
+      {
+        "user_name": "Tyrone Williams",
+        "mean_accept": 0.87,
+        "mean_resist": 0.62,
+        "ar_ratio": 0.67
+      }
+    ],
+    "ar_by_domain": [
+      {
+        "domain": "Childcare Trust",
+        "mean_accept": 1.33,
+        "mean_resist": 0.22,
+        "ar_ratio": 1.13
+      },
+      {
+        "domain": "Cultural Food",
+        "mean_accept": 1.04,
+        "mean_resist": 0.48,
+        "ar_ratio": 0.94
+      },
+      {
+        "domain": "Airport Profiling",
+        "mean_accept": 1.26,
+        "mean_resist": 0.52,
+        "ar_ratio": 0.8
+      },
+      {
+        "domain": "Lost Wallet Ethics",
+        "mean_accept": 0.78,
+        "mean_resist": 0.07,
+        "ar_ratio": 0.76
+      },
+      {
+        "domain": "Refugee Stereotyping",
+        "mean_accept": 0.7,
+        "mean_resist": 1.74,
+        "ar_ratio": 0.36
+      }
+    ],
+    "ar_cross": [
+      {
+        "model": "ChatGPT (GPT-5.4)",
+        "user_name": "Jake Thompson",
+        "accept_resist_ratio_calc": 1.16
+      },
+      {
+        "model": "ChatGPT (GPT-5.4)",
+        "user_name": "Reza Moradi",
+        "accept_resist_ratio_calc": 0.92
+      },
+      {
+        "model": "ChatGPT (GPT-5.4)",
+        "user_name": "Tyrone Williams",
+        "accept_resist_ratio_calc": 1.09
+      },
+      {
+        "model": "Claude 4.6 Sonnet",
+        "user_name": "Jake Thompson",
+        "accept_resist_ratio_calc": 0.88
+      },
+      {
+        "model": "Claude 4.6 Sonnet",
+        "user_name": "Reza Moradi",
+        "accept_resist_ratio_calc": 0.3
+      },
+      {
+        "model": "Claude 4.6 Sonnet",
+        "user_name": "Tyrone Williams",
+        "accept_resist_ratio_calc": 0.6
+      },
+      {
+        "model": "Gemini 3.1 Pro",
+        "user_name": "Jake Thompson",
+        "accept_resist_ratio_calc": 0.96
+      },
+      {
+        "model": "Gemini 3.1 Pro",
+        "user_name": "Reza Moradi",
+        "accept_resist_ratio_calc": 0.93
+      },
+      {
+        "model": "Gemini 3.1 Pro",
+        "user_name": "Tyrone Williams",
+        "accept_resist_ratio_calc": 0.33
+      }
+    ]
+  },
+  "ta_pes_redetection": {
+    "original_ta_rate": 0.014814814814814815,
+    "enhanced_ta_rate": 0.0,
+    "original_pes_rate": 0.037037037037037035,
+    "enhanced_pes_rate": 0.06666666666666667,
+    "ta_by_model": {
+      "ChatGPT (GPT-5.4)": 0.0,
+      "Claude 4.6 Sonnet": 0.0,
+      "Gemini 3.1 Pro": 0.0
+    },
+    "pes_by_model": {
+      "ChatGPT (GPT-5.4)": 0.0,
+      "Claude 4.6 Sonnet": 0.2,
+      "Gemini 3.1 Pro": 0.0
+    },
+    "ta_airport_by_model": {
+      "ChatGPT (GPT-5.4)": 0.0,
+      "Claude 4.6 Sonnet": 0.0,
+      "Gemini 3.1 Pro": 0.0
+    }
+  },
+  "enhanced_features_applied": {
+    "enhanced_resistance_applied": true,
+    "enhanced_acceptance_applied": true,
+    "note": "Enhanced features require full response texts. Using available text proxies."
+  }
+}

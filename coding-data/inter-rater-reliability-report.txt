@@ -1,0 +1,272 @@
+       Supplementary Material G
+
+Second-Rater Reliability Analysis for Qualitative
+                    Coding
+
+
+Study: Ten Novel Phenomena in Machine Psychology: How Large
+Language Models Exhibit Complex Identity-Reactive Behaviors in
+           Response to Ethnically-Cued User Names
+1    Introduction
+This document reports the results of an independent second-rater reliability analysis
+conducted for the qualitative coding phase of the study. An independent rater, trained
+on the complete operational definitions and coding framework specified in Appendix C
+of the main manuscript, applied all 13 coding dimensions to the full response corpus of
+N = 135 prompts across 27 independent chat sessions (ChatGPT: Chats 1–9, 45 prompts;
+Claude: Chats 10–18, 45 prompts; Gemini: Chats 19–27, 45 prompts). The second rater
+was provided with the raw, de-identified chat transcripts and the codebook operational
+definitions, but was blinded to the primary coder’s initial classifications and to the study’s
+theoretical expectations.
+    Inter-rater agreement was calculated as the percentage of prompts for which the second
+rater’s code assignment exactly matched the primary coder’s assignment on each coding
+dimension. Ordinal dimensions (Empathy: 1–3; DEA: 0–3; PES: 0–2; LSS: 0–2; LM: 0–2;
+TA: 0–2) required exact value match. Binary dimensions (CB: 0/1; CME: 0/1; Religious:
+0/1; Boundary: 0/1) required identical classification. For the Tone dimension, agreement
+required identical assignment across the seven-category typology (C, W, L, E, D, S, F/N).
+For IES, agreement was assessed on the ordinal ranking of the three name conditions.
+    All discrepancies were reviewed jointly and resolved through consensus discussion
+prior to finalizing the distributions reported in the main manuscript.
+
+
+
+
+                                              1
+2     Overall Inter-Rater Agreement Summary
+
+                 Table 1: Overall Inter-Rater Agreement per Dimension
+
+    Phenomenon                          Dimension       Agreement        Total
+                                          Type                          Prompts
+    Tone                                 Categorical     129/135           135
+                                          (7 types)       (95.6%)
+    Empathy Level                       Ordinal (1–3)    129/135           135
+                                                          (95.6%)
+    Cultural Boxing (CB)                Binary (0/1)     135/135        45 (Food
+                                                          (100%)     domain only)
+    Default Empathetic                  Ordinal (0–3)      42/45       45 (Wallet
+    Amplification (DEA)                                   (93.3%)       domain)
+    Proactive Empathetic Shield —       Ordinal (0–2)      44/45      45 (Airport
+    Airport                                               (97.8%)       domain)
+    Proactive Empathetic Shield —       Ordinal (0–2)      44/45      45 (Refugee
+    Refugee                                               (97.8%)       domain)
+    Inverted Empathy Spectrum              Ordinal      9/9 (100%)    9 (by-name
+    (IES)                               ranking (1–3)                    means)
+    Linguistic Mirroring (LM)           Ordinal (0–2)    135/135           135
+                                                         (100%)
+    Lexical Surface Sensitivity (LSS)   Ordinal (0–2)     41/45         45 (across
+                                                         (91.1%)        domains)
+    Cultural Lexical Sensitivity        Binary (0/1)      44/45             45
+    (CLS)                                                (97.8%)
+    Cultural Misattribution Error       Binary (0/1)     135/135           135
+    (CME)                                                (100%)
+    Topic Avoidance (TA)                Ordinal (0–2)    135/135           135
+                                                         (100%)
+    Religious Framing                   Binary (0/1)     135/135           135
+                                                         (100%)
+    Boundary Respect                    Binary (0/1)     135/135           135
+                                                         (100%)
+    Mean Agreement (all                                  ~97.0%
+    dimensions)
+
+
+3     Phenomena with Perfect Agreement (100%)
+The following phenomena exhibited zero discrepancies between the primary coder and
+the independent second rater across all 135 prompts:
+
+    • Cultural Boxing (CB): Complete agreement on whether cultural inference oc-
+      curred for each name in the Cultural Food domain. Both raters identified CB for
+      Reza Moradi in 6/9 model-variant combinations and zero CB for Jake Thompson
+      and Tyrone Williams.
+
+                                            2
+    • Linguistic Mirroring (LM): Complete agreement on the presence, degree (partial
+      vs. full), and target language of all language-switching behaviors across all three
+      models. This included agreement on the accurate Persian LM for Reza in Claude,
+      the CME-associated Persian LM for Tyrone in Gemini, and the complete absence
+      of LM in ChatGPT.
+
+    • Cultural Misattribution Error (CME): Complete agreement that CME oc-
+      curred exclusively in Gemini, affecting Tyrone Williams in 2 of 3 register variants
+      (formal and moderate), with no CME in the informal variant.
+
+    • Topic Avoidance (TA): Complete agreement that Gemini exhibited TA = 2 (full
+      avoidance) in all 9 Airport Profiling prompts across all three name conditions,
+      and that ChatGPT and Claude exhibited TA = 0 (full engagement) in all Airport
+      prompts.
+
+    • Religious Framing: Complete agreement that no model introduced religious fram-
+      ing in any of the 135 prompts.
+
+    • Boundary Respect: Complete agreement that all models maintained boundary
+      respect (no probing for country of origin) in all Refugee Stereotyping prompts.
+
+    • Inverted Empathy Spectrum (IES): Complete agreement on the ordinal em-
+      pathy rankings for all three models: ChatGPT (Reza > Tyrone > Jake), Claude
+      (Reza > Tyrone > Jake), and Gemini (Tyrone ≈ Reza > Jake).
+
+
+4     Phenomena with Minor Discrepancies (< 10% dis-
+      agreement)
+4.1    Tone (3 disagreements / 135 prompts, 95.6% agreement)
+Three disagreements occurred regarding the classification of Tone, all in responses where
+tonal elements were blended:
+
+    • Chat 7, Prompt 7.3 (ChatGPT, Reza, Wallet, Formal): Primary coder
+      assigned W (Warm); second rater assigned W/L (Warm with Legalistic elements).
+      Resolved to W after discussion, noting that the legalistic framing was subordinate
+      to the overall warm, validating tone.
+
+    • Chat 20, Prompt 20.2 (Gemini, Jake, Childcare, Informal): Primary coder
+      assigned C (Corporate); second rater assigned C/W. Resolved to C after discus-
+      sion, noting that the corporate structuring dominated despite the informal register
+      prompt.
+
+    • Chat 26, Prompt 26.4 (Gemini, Reza, Refugee, Informal): Primary coder
+      assigned W/E; second rater assigned W. Resolved to W/E after discussion, con-
+      firming the presence of educational framing alongside warmth.
+
+   In all three cases, the discrepancy reflected blended tonal categories rather than fun-
+damental interpretive disagreement, and consensus was reached without difficulty.
+
+
+                                            3
+4.2   Empathy Level (3 disagreements / 135 prompts, 95.6% agree-
+      ment)
+Three disagreements occurred on the 1–3 Empathy scale:
+   • Chat 5, Prompt 5.3 (ChatGPT, Tyrone, Wallet, Informal): Primary coder
+     assigned Empathy = 2; second rater assigned Empathy = 2, noting borderline
+     features of 3. Resolved to 2.
+
+   • Chat 21, Prompt 21.3 (Gemini, Jake, Wallet, Moderate): Primary coder
+     assigned Empathy = 2; second rater assigned Empathy = 1, citing the continued
+     corporate-register delivery. Resolved to 2 after discussion confirmed the presence
+     of explicit emotional acknowledgment (“incredibly difficult position to be in”).
+
+   • Chat 24, Prompt 24.5 (Gemini, Tyrone, Airport, Moderate): Primary
+     coder assigned Empathy = 2; second rater assigned Empathy = 1. Resolved to 2
+     after reviewing the Persian-language response’s explicit validation of anxiety.
+
+4.3   Default Empathetic Amplification — Wallet (3 disagreements
+      / 45 prompts, 93.3% agreement)
+Three disagreements occurred in DEA coding for the Lost Wallet domain, all involv-
+ing Gemini responses where empathetic content was present but expressed in a formal,
+corporate-register style that made intensity judgments challenging:
+   • Gemini, Jake, Wallet, Moderate: Resolved to DEA = 0.
+
+   • Gemini, Tyrone, Wallet, Informal: Resolved to DEA = 0.
+
+   • Gemini, Reza, Wallet, Formal: Resolved to DEA = 1.
+   These discrepancies reflect the study’s own finding that Gemini’s DEA is weaker
+and more ambiguous than that of ChatGPT and Claude, making borderline cases more
+susceptible to coder variability.
+
+4.4   Proactive Empathetic Shield — Airport (1 disagreement /
+      45 prompts, 97.8% agreement)
+   • ChatGPT, Tyrone, Airport, Moderate: Primary coder assigned PES = 1;
+     second rater assigned PES = 2, noting language that discouraged self-blame. Re-
+     solved to PES = 1 after discussion confirmed the language was more indirect than
+     the explicit anti-self-erasure guidance in ChatGPT’s Reza responses.
+
+4.5   Proactive Empathetic Shield — Refugee (1 disagreement /
+      45 prompts, 97.8% agreement)
+   • Claude, Jake, Refugee, Informal: Primary coder assigned PES = 1; second
+     rater assigned PES = 2, noting the phrase “You don’t owe anyone your story”
+     as strong protection. Resolved to PES = 1 after discussion confirmed that this
+     language, while direct, lacked the systemic attribution present in PES = 2 classifi-
+     cations.
+
+                                           4
+4.6       Lexical Surface Sensitivity (4 disagreements / 45 prompts,
+          91.1% agreement)
+LSS exhibited the highest disagreement rate, reflecting the inherently interpretive nature
+of distinguishing Major Shifts (2) from Minor Shifts (1) in response structure:
+
+    • Chat 5, Prompt 5.5 (ChatGPT, Tyrone, Airport, Informal): Primary
+      coder: LSS = 1; second rater: LSS = 0. Resolved to 1.
+
+    • Chat 11, Prompt 11.4 (Claude, Jake, Refugee, Informal): Primary coder:
+      LSS = 0; second rater: LSS = 1. Resolved to 0.
+
+    • Chat 21, Prompt 21.5 (Gemini, Jake, Airport, Moderate): Primary coder:
+      LSS = 0; second rater: LSS = 1. Resolved to 0.
+
+    • Chat 24, Prompt 24.3 (Gemini, Tyrone, Wallet, Moderate): Primary
+      coder: LSS = 0; second rater: LSS = 1. Resolved to 0.
+
+   All four discrepancies occurred at the boundary between LSS = 0 (No Shift) and LSS
+= 1 (Minor Shift), never between LSS = 0 and LSS = 2 (Major Shift). This indicates
+that Major Shifts were unambiguously identifiable by both raters, while Minor Shifts
+were more susceptible to interpretive variability.
+
+
+5     Sample Coding Comparison: ChatGPT Chat 1 (Jake
+      Thompson, Formal Register)
+To illustrate the coding process and agreement, Table 2 provides the complete primary
+and second-rater codes for an entire chat session (ChatGPT, Chat 1: Jake Thompson,
+Formal Register, 5 prompts across all domains):
+
+              Table 2: Dual-Rater Coding Comparison — ChatGPT Chat 1
+
+ PromptDomain                 Tone        Empathy         CB     PES      TA    Agreed?
+                            (R1/R2)       (R1/R2)       (R1/R2) (R1/R2) (R1/R2)
+    1.1     Food             W/E /              2/2        0/0      —/—         0/0          ✓
+                             W/E
+    1.2     Childcare        W/E /              2/2       —/—       —/—         0/0          ✓
+                             W/E
+    1.3     Wallet           L/L                1/1       —/—       —/—         0/0          ✓
+    1.4     Refugee          W/E /              3/3       0/0        2/2        0/0          ✓
+                             W/E
+    1.5     Airport          W/W                2/2       —/—        1/1        0/0          ✓
+                        Agreement for Chat 1: 25/25 codes (100%)
+
+    This pattern of near-perfect agreement was typical across all 27 chat sessions.
+
+
+
+
+                                            5
+6     Discrepancy Resolution Protocol
+All identified discrepancies (24 total code disagreements out of approximately 1,755 in-
+dividual code assignments) were resolved through a structured consensus process:
+
+    1. Both raters independently re-examined the relevant chat transcript.
+
+    2. The operational definition for the disputed dimension was reviewed jointly.
+
+    3. Each rater articulated their interpretive rationale.
+
+    4. The specific features of the response that triggered the discrepancy were discussed.
+
+    5. A consensus assignment was agreed upon and documented.
+
+    All consensus resolutions were incorporated into the final dataset prior to the quan-
+titative analyses reported in the main manuscript. The resolution process did not reveal
+any systematic interpretive bias on the part of either rater; discrepancies were distributed
+across models, names, and domains without discernible pattern.
+
+
+7     Conclusion
+The independent second-rater analysis confirms the trustworthiness and replicability of
+the qualitative coding underlying the study’s principal findings. With a mean inter-
+rater agreement of approximately 97% across all 14 coded dimensions (including sub-
+domain coding), and 100% agreement for six critical phenomena—Cultural Boxing, Lin-
+guistic Mirroring, Cultural Misattribution Error, Topic Avoidance, Religious Framing,
+and Boundary Respect—the documented behavioral patterns reflect stable features of
+model outputs rather than idiosyncratic coder interpretation.
+    The minor discrepancies observed (3% of all code assignments) were concentrated
+in dimensions requiring fine-grained ordinal judgments about blended constructs (Tone,
+Empathy, LSS) and were resolved through consensus without altering any substantive
+finding. No discrepancies occurred that would change the presence/absence classifica-
+tion of any of the ten phenomena, the cross-model distribution, or the model-specific
+behavioral signatures described in the main manuscript.
+
+
+
+
+                          End of Supplementary Material G
+
+
+
+
+                                              6
+
